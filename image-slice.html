@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이미지 조각</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .wrap {
+      margin-top: 15px;
+    }
+
+    .layer-wrap {
+      position: absolute;
+      display: flex;
+      top: 0;
+      left: 0;
+    }
+
+    .layer {
+      width: 255px;
+      height: 726px;
+    }
+
+    .layer:nth-child(even) {
+      border: 20px solid white;
+      border-top: 200px solid white;
+    }
+  </style>
+  <body>
+    <div class="wrap">
+      <img src="./road.jpg" />
+      <div class="layer-wrap">
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+      </div>
+    </div>
+  </body>
+</html>
